@@ -25,6 +25,19 @@ var guestbookListener = null;
 
 // Add Firebase project configuration object here
 // var firebaseConfig = {};
+  // web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCidWslseI7a9dCNFSShrVPZDLMm3xR_d8",
+    authDomain: "fir-web-codelab-5e1dd.firebaseapp.com",
+    databaseURL: "https://fir-web-codelab-5e1dd.firebaseio.com",
+    projectId: "fir-web-codelab-5e1dd",
+    storageBucket: "fir-web-codelab-5e1dd.appspot.com",
+    messagingSenderId: "755886290702",
+    appId: "1:755886290702:web:a7d6e7c6ddd86c1259095f"
+  };
+  
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
 // firebase.initializeApp(firebaseConfig);
 
@@ -40,7 +53,7 @@ const uiConfig = {
       // Handle sign-in.
       // Return false to avoid redirect.
       return false;
-    }
+    } 
   }
 };
 
